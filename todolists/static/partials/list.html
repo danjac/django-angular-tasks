@@ -1,0 +1,9 @@
+      <ul>
+        <li ng-hide="todo.is_done" ng-repeat="todo in todos" ng-cloak>
+        {{ todo.name }} <a href="#" ng-click="markDone(todo)">Done!</a>
+        </li>
+      </ul>
+      <form ng-submit="createTodo()" class="form-inline">
+          <input ng-model="newTodo.name" required><input type="submit" value="Add" class="btn btn-default">
+  </form>
+
